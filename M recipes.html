@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recipe List</title>
+  <style>
+.categories{
+    margin-right: 100px;
+}
+.container{
+    margin-left: 50px;
+}
+    
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+}
+
+.container {
+  overflow: hidden;
+  height: 200%; /* Adjust as per your need */
+  width: 400px; /* Image width + padding/margin */
+}
+
+.slider {
+  height: 100%;
+  overflow: hidden;
+}
+
+.slide-track {
+  display: flex;
+  flex-direction: column;
+  animation: scrollVertical 17s linear infinite;
+}
+
+
+
+
+
+.slide {
+  width: 600px;
+  height: 300px;
+  margin: 10px 0;
+  margin-bottom: 20px;
+  border: 2px solid #ccc;
+  object-fit: cover;
+}
+
+@keyframes scrollVertical {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(100%);
+  }
+}
+
+    
+  </style>
+</head>
+<body>
+  <div class="categories">
+    <h1>Recipes List</h1>
+    <ul>
+      <li><a href="Kadhai Paneer.html" target="_blank">Kadhai Paneer</a></li>
+      <li><a href="Handi Paneer.html" target="_blank">Handi Paneer</a></li>
+      <li><a href="Shahi Paneer.html" target="_blank">Shahi Paneer</a></li>
+      <li><a href="Matar Paneer.html" target="_blank">Matar Paneer</a></li>
+      <li><a href="Dal Makhni.html" target="_blank">Dal Makhni</a></li>
+      <li><a href="Masala Bhindi.html" target="_blank">Masala Bhindi</a></li>
+      <li><a href="Palak Paneer.html" target="_blank">Palak Paneer</a></li>
+      <li><a href="Malai Kofta.html" target="_blank">Malai Kofta</a></li>
+      <li><a href="Butter Chicken.html" target="_blank">Butter Chicken</a></li>
+      <li><a href="Paneer Butter Masala.html" target="_blank">Paneer Butter Masala</a></li>
+      <li><a href="Dum Aloo.html" target="_blank">Dum Aloo</a></li>
+      <li><a href="Mix Veg.html" target="_blank">Mix Veg</a></li>
+      <li><a href="Egg Curry.html" target="_blank">Egg Curry</a></li>
+      <li><a href="Chicken 65.html" target="_blank">Chicken 65</a></li>
+      <li><a href="Jeera Aloo.html" target="_blank">Mutton Korma</a></li>
+      <li><a href="Soya Chaap.html" target="_blank">Mutton Korma</a></li>
+      
+
+    </ul>
+    <button id="goBackBtn">Go Back</button>
+  </div>
+
+  <script>
+    document.getElementById('goBackBtn').addEventListener('click', function() {
+      window.location.href = 'Recipe Book 78.html'; // Go back to the main page
+    });
+  </script>
+
+<div class="container">
+    <div class="slider">
+      <div class="slide-track">
+        <img src="images/img31.jpg" alt="Image 31" class="slide" >
+        <img src="images/img32.webp" alt="Image 32" class="slide">
+        
+        <img src="images/img33.webp" alt="Image 33" class="slide">
+        <img src="images/img34.webp" alt="Image 34" class="slide">
+        <img src="images/img35.jpg" alt="Image 35" class="slide">
+        <img src="images/img36.jpg" alt="Image 36" class="slide">
+        <img src="images/img37.jpg" alt="Image 37" class="slide">
+      </div>
+    </div>
+  </div>

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recipe List</title>
+  <style>
+.categories{
+    margin-right: 100px;
+}
+.container{
+    margin-left: 50px;
+}
+    
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+}
+
+.container {
+  overflow: hidden;
+  height: 200%; /* Adjust as per your need */
+  width: 400px; /* Image width + padding/margin */
+}
+
+.slider {
+  height: 100%;
+  overflow: hidden;
+}
+
+.slide-track {
+  display: flex;
+  flex-direction: column;
+  animation: scrollVertical 17s linear infinite;
+}
+
+
+
+
+
+.slide {
+  width: 600px;
+  height: 300px;
+  margin: 10px 0;
+  margin-bottom: 20px;
+  border: 2px solid #ccc;
+  object-fit: cover;
+}
+
+@keyframes scrollVertical {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(100%);
+  }
+}
+
+    
+  </style>
+</head>
+<body>
+  <div class="categories">
+    <h1>Recipes List</h1>
+    <ul>
+      <li><a href="Tawa Roti.html" target="_blank">Tawa Roti</a></li>
+      <li><a href="Tandoori Roti.html" target="_blank">Tandoori Roti</a></li>
+      <li><a href="Naan.html" target="_blank">Naan</a></li>
+      <li><a href="Stuffed Naan.html" target="_blank">Stuffed Naan</a></li>
+      <li><a href="Missi Roti.html" target="_blank">Missi Roti</a></li>
+      <li><a href="Plain Paratha.html" target="_blank">Plain Paratha</a></li>
+      <li><a href="Stuffed Paratha.html" target="_blank">Stuffed Paratha</a></li>
+      <li><a href="Kulcha.html" target="_blank">Kulcha</a></li>
+      <li><a href="Garlic Bread.html" target="_blank">Garlic Bread</a></li>
+      <li><a href="Puri.html" target="_blank">Puri</a></li>
+      
+      <li><a href="Tortilla" target="_blank">Tortilla</a></li>
+
+    </ul>
+    <button id="goBackBtn">Go Back</button>
+  </div>
+
+  <script>
+    document.getElementById('goBackBtn').addEventListener('click', function() {
+      window.location.href = 'Recipe Book 78.html'; // Go back to the main page
+    });
+  </script>
+
+<div class="container">
+    <div class="slider">
+      <div class="slide-track">
+        <img src="images/img 9.jpg" alt="Image 9" class="slide" >
+        <img src="images/img 10.jpeg" alt="Image 10" class="slide">
+        
+        <img src="images/img 11.jpg" alt="Image 11" class="slide">
+        <img src="images/img 12.jpg" alt="Image 12" class="slide">
+        <img src="images/img 13.jpeg" alt="Image 13" class="slide">
+        <img src="images/img 13.jpeg" alt="Image 14" class="slide">
+        <img src="images/img 15.jpeg" alt="Image 15" class="slide">
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+</body>
+</html>

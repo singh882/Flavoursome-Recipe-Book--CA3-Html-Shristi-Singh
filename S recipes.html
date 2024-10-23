@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recipe List</title>
+  <style>
+.categories{
+    margin-right: 100px;
+}
+.container{
+    margin-left: 50px;
+}
+    
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+}
+
+.container {
+  overflow: hidden;
+  height: 200%; /* Adjust as per your need */
+  width: 400px; /* Image width + padding/margin */
+}
+
+.slider {
+  height: 100%;
+  overflow: hidden;
+}
+
+.slide-track {
+  display: flex;
+  flex-direction: column;
+  animation: scrollVertical 17s linear infinite;
+}
+
+
+
+
+
+.slide {
+  width: 600px;
+  height: 300px;
+  margin: 10px 0;
+  margin-bottom: 20px;
+  border: 2px solid #ccc;
+  object-fit: cover;
+}
+
+@keyframes scrollVertical {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(100%);
+  }
+}
+
+    
+  </style>
+</head>
+<body>
+  <div class="categories">
+    <h1>Recipes List</h1>
+    <ul>
+      <li><a href="dr1.html" target="_blank">drink1</a></li>
+      <li><a href="dr2.html" target="_blank">drink2</a></li>
+      <li><a href="dr3.html" target="_blank">drink3</a></li>
+      <li><a href="dr4.html" target="_blank">drink4</a></li>
+      <li><a href="dr5.html" target="_blank">drink5</a></li>
+      <li><a href="dr6.html" target="_blank">drink6</a></li>
+      <li><a href="dr7.html" target="_blank">drink7</a></li>
+      <li><a href="dr8.html" target="_blank">drink8</a></li>
+      <li><a href="dr9.html" target="_blank">drink9</a></li>
+      <li><a href="dr10.html" target="_blank">drink10</a></li>
+      <li><a href="dr11.html" target="_blank">drink11</a></li>
+      
+      
+
+    </ul>
+    <button id="goBackBtn">Go Back</button>
+  </div>
+
+  <script>
+    document.getElementById('goBackBtn').addEventListener('click', function() {
+      window.location.href = 'Recipe Book 78.html'; // Go back to the main page
+    });
+  </script>
+
+<div class="container">
+    <div class="slider">
+      <div class="slide-track">
+        <img src="images/img24.webp" alt="Image 24" class="slide" >
+        <img src="images/img25.webp" alt="Image 25" class="slide">
+        
+        <img src="images/img26.jpg" alt="Image 26" class="slide">
+        <img src="images/img27.jpg" alt="Image 27" class="slide">
+        <img src="images/img28.jpg" alt="Image 28" class="slide">
+        <img src="images/img29.jpg" alt="Image 29" class="slide">
+        <img src="images/img30.jpg" alt="Image 30" class="slide">
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+</body>
+</html>

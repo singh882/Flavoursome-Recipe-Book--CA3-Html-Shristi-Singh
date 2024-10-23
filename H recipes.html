@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recipe List</title>
+  <style>
+.categories{
+    margin-right: 100px;
+}
+.container{
+    margin-left: 50px;
+}
+    
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+}
+
+.container {
+  overflow: hidden;
+  height: 200%; /* Adjust as per your need */
+  width: 400px; /* Image width + padding/margin */
+}
+
+.slider {
+  height: 100%;
+  overflow: hidden;
+}
+
+.slide-track {
+  display: flex;
+  flex-direction: column;
+  animation: scrollVertical 17s linear infinite;
+}
+
+
+
+
+
+.slide {
+  width: 600px;
+  height: 300px;
+  margin: 10px 0;
+  margin-bottom: 20px;
+  border: 2px solid #ccc;
+  object-fit: cover;
+}
+
+@keyframes scrollVertical {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(100%);
+  }
+}
+
+    
+  </style>
+</head>
+<body>
+  <div class="categories">
+    <h1>Recipes List</h1>
+    <ul>
+      <li><a href="Keto.html" target="_blank">Keto Chicken Cobb Salad</a></li>
+      <li><a href="Garlic herb.html" target="_blank">Garlic Herb Roasted potatoes</a></li>
+      <li><a href="Garlic avocado.html" target="_blank">Garlic Avocado Mushroom</a></li>
+      <li><a href="Brocolli.html" target="_blank">Brocolli And Mushrooms Stir Fry</a></li>
+      <li><a href="shrimp.html" target="_blank">Honey Garlic Butter Shrimp And Brocolli</a></li>
+      <li><a href="chickpea.html" target="_blank">Chickpea Salad</a></li>
+      
+
+    </ul>
+    <button id="goBackBtn">Go Back</button>
+  </div>
+
+  <script>
+    document.getElementById('goBackBtn').addEventListener('click', function() {
+      window.location.href = 'Recipe Book 78.html'; // Go back to the main page
+    });
+  </script>
+
+<div class="container">
+    <div class="slider">
+      <div class="slide-track">
+        <img src="images/Img 16.jpg" alt="Image 16" class="slide" >
+        <img src="images/img 17.jpg" alt="Image 17" class="slide">
+        
+        <img src="images/img 18.jpg" alt="Image 18" class="slide">
+        <img src="images/img 19.jpg" alt="Image 19" class="slide">
+        <img src="images/img 20.jpg" alt="Image 20" class="slide">
+        <img src="images/img 21.jpg" alt="Image 21" class="slide">
+        <img src="images/img 23.jpg" alt="Image 23" class="slide">
+      </div>
+    </div>
+  </div>

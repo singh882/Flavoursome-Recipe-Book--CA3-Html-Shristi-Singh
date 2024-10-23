@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recipe List</title>
+  <style>
+.categories{
+    margin-right: 100px;
+}
+.container{
+    margin-left: 50px;
+}
+    
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+}
+
+.container {
+  overflow: hidden;
+  height: 200%; /* Adjust as per your need */
+  width: 400px; /* Image width + padding/margin */
+}
+
+.slider {
+  height: 100%;
+  overflow: hidden;
+}
+
+.slide-track {
+  display: flex;
+  flex-direction: column;
+  animation: scrollVertical 17s linear infinite;
+}
+
+
+
+
+
+.slide {
+  width: 600px;
+  height: 300px;
+  margin: 10px 0;
+  margin-bottom: 20px;
+  border: 2px solid #ccc;
+  object-fit: cover;
+}
+
+@keyframes scrollVertical {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(100%);
+  }
+}
+
+    
+  </style>
+</head>
+<body>
+  <div class="categories">
+    <h1>Recipes List</h1>
+    <ul>
+      <li><a href="Pizza.html" target="_blank">Pizza</a></li>
+      <li><a href="Burger.html" target="_blank">Burger</a></li>
+      <li><a href="Noodles.html" target="_blank">Noodles</a></li>
+      <li><a href="White Sauce Pasta.html" target="_blank">White Sauce Pasta</a></li>
+      <li><a href="Red Sauce Pasta.html" target="_blank">Red Sauce Pasta</a></li>
+      <li><a href="Vada Pav.html" target="_blank">Vada Pav</a></li>
+      <li><a href="Momos.html" target="_blank">Momos</a></li>
+      <li><a href="Hot Dog.html" target="_blank">Hot Dog</a></li>
+      <li><a href="Baked Veg.html" target="_blank">Baked Veg</a></li>
+      
+      
+      
+
+    </ul>
+    <button id="goBackBtn">Go Back</button>
+  </div>
+
+  <script>
+    document.getElementById('goBackBtn').addEventListener('click', function() {
+      window.location.href = 'Recipe Book 78.html'; // Go back to the main page
+    });
+  </script>
+
+<div class="container">
+    <div class="slider">
+      <div class="slide-track">
+        <img src="images/img38.jpg" alt="Image 38" class="slide" >
+        <img src="images/img39.jpg" alt="Image 39" class="slide">
+        
+        <img src="images/img40.jpg" alt="Image 40" class="slide">
+        <img src="images/img41.jpg" alt="Image 41" class="slide">
+        <img src="images/img42.jpg" alt="Image 42" class="slide">
+        <img src="images/img43.jpg" alt="Image 43" class="slide">
+        <img src="images/img44.jpg" alt="Image 44" class="slide">
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+</body>
+</html>

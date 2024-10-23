@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .box {
+            padding: 20px;
+            margin: 10px;
+            border: 1px solid #ccc;
+            width: 300px;
+        }
+        
+    </style>
+</head>
+<body>
+
+    <h1>Hot Dog</h1>
+
+    <img src="images/hot dog.jpg" alt="Recipe Image" width="900" height="700">
+    <div class="container">
+        <div class="box">
+            <h3>Ingredients</h3>
+            <ul> <li>2 hot dog buns</li> <li>2 sausages</li> <li>Mustard and ketchup</li> <li>Onion, chopped (optional)</li> <li>Pickles (optional)</li> </ul>
+
+            
+        </div>
+
+        <div class="box">
+            <h3>Instructions</h3>
+            <ol> <li>Boil or grill the sausages until cooked through.</li> <li>Place each sausage in a hot dog bun.</li> <li>Top with mustard, ketchup, chopped onions, and pickles as desired.</li> <li>Serve hot.</li> </ol>
+
+
+            
+        </div>
+    </div>
+
+    <style>
+        .form-container {
+            background-color: #E6E1F5;
+            padding: 20px;
+            width: 600px;
+            border-radius: 8px;
+            font-family: Arial, sans-serif;
+            margin-top:60px;
+        }
+        .form-container h2 {
+            font-size: 24px;
+            color: #333;
+        }
+        .form-container p {
+            margin-bottom: 10px;
+        }
+        input[type="email"] {
+            width: 90%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .save-button {
+            background-color: #663399;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+        .save-button:hover {
+            background-color: #552288;
+        }
+    </style>
+
+<body>
+<center>
+<div class="form-container">
+    <div style="margin-top:60px; width:600px;">
+<form onsubmit="alert('Recipe saved successfully!');">
+    <form action="saved_recipes.html" method="GET">
+    <h2>Save this recipe!</h2>
+    <p>Get this sent to your inbox, plus get new recipes from us every week!</p>
+    <form action="#" method="post">
+        <label for="email">EMAIL *</label><br>
+        <input type="email" id="email" name="email" required><br>
+
+        
+        
+        <button type="submit" class="save-button">SAVE RECIPE</button>
+
+
+    </form>
+</form>
+</form>
+</div>
+</div>
+</center>
+</body>
+</html>
+
+
+
+</body>
+</html>

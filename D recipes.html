@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recipe List</title>
+  <style>
+.categories{
+    margin-right: 100px;
+}
+.container{
+    margin-left: 50px;
+}
+    
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+}
+
+.container {
+  overflow: hidden;
+  height: 200%; /* Adjust as per your need */
+  width: 400px; /* Image width + padding/margin */
+}
+
+.slider {
+  height: 100%;
+  overflow: hidden;
+}
+
+.slide-track {
+  display: flex;
+  flex-direction: column;
+  animation: scrollVertical 17s linear infinite;
+}
+
+
+
+
+
+.slide {
+  width: 600px;
+  height: 300px;
+  margin: 10px 0;
+  margin-bottom: 20px;
+  border: 2px solid #ccc;
+  object-fit: cover;
+}
+
+@keyframes scrollVertical {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(100%);
+  }
+}
+
+    
+  </style>
+</head>
+<body>
+  <div class="categories">
+    <h1>Recipes List</h1>
+    <ul>
+      <li><a href="Ghevar.html" target="_blank">Ghevar</a></li>
+      <li><a href="Gajar Ka Halwa.html" target="_blank">Gajar Ka Halwa</a></li>
+      <li><a href="Modak.html" target="_blank">Modak</a></li>
+      <li><a href="brownies.html" target="_blank">Chocolate Brownies</a></li>
+      <li><a href="pancakes.html" target="_blank">Pancakes</a></li>
+      <li><a href="Ras Malai.html" target="_blank">Ras Malai</a></li>
+      <li><a href="Rasgulla.html" target="_blank">Rasgulla</a></li>
+      <li><a href="Raj Bhog.html" target="_blank">Raj Bhog</a></li>
+      <li><a href="Jalebi.html" target="_blank">Jalebi</a></li>
+      <li><a href="Barfi.html" target="_blank">Barfi</a></li>
+      <li><a href="Boondi Ka Laddu.html" target="_blank">Boondi Ka Laddu</a></li>
+      <li><a href="Besan Ka Laddu.html" target="_blank">Besan Ka Laddu</a></li>
+      <li><a href="Kaju Katli.html" target="_blank">Kaju Katli</a></li>
+      <li><a href="Soan Papdi.html" target="_blank">Soan Papdi</a></li>
+      <li><a href="Mysore Pak.html" target="_blank">Mysore Pak</a></li>
+      <li><a href="Cheese Cake.html" target="_blank">Cheese Cake</a></li>
+      <li><a href="Banana Pudding.html" target="_blank">Banana Pudding</a></li>
+      <li><a href="Gujiya.html" target="_blank">Gujiya</a></li>
+      <li><a href="Ice Cream.html" target="_blank">Ice Cream</a></li>
+      <li><a href="Fudge.html" target="_blank">Fudge</a></li>
+      <li><a href="Pie.html" target="_blank">Pie</a></li>
+      <li><a href="Chocolate Chip Cookies.html" target="_blank">Chocolate Chip Cookies</a></li>
+      <li><a href="Black Forest Cake.html" target="_blank">Black Forest Cake</a></li>
+
+    </ul>
+    <button id="goBackBtn">Go Back</button>
+  </div>
+
+  <script>
+    document.getElementById('goBackBtn').addEventListener('click', function() {
+      window.location.href = 'Recipe Book 78.html'; // Go back to the main page
+    });
+  </script>
+
+<div class="container">
+    <div class="slider">
+      <div class="slide-track">
+        <img src="images/img 1.jpg" alt="Image 1" class="slide" >
+        <img src="images/img 2.avif" alt="Image 2" class="slide">
+        
+        <img src="images/img 4.avif" alt="Image 4" class="slide">
+        <img src="images/img 5.jpg" alt="Image 5" class="slide">
+        <img src="images/img 6.webp" alt="Image 6" class="slide">
+        <img src="images/img 7.jpeg" alt="Image 7" class="slide">
+        <img src="images/img 8.webp" alt="Image 8" class="slide">
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+</body>
+</html>
